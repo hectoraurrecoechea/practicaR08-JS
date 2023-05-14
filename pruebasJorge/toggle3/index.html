@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .seleccionado{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur molestias necessitatibus similique suscipit?
+    Eum fugiat illum ipsam, modi natus neque odit, optio quisquam repellat rerum sequi veniam vitae voluptatibus.</p>
+<p>Blanditiis consequatur, dolore fuga ipsa minus nisi vel! Amet, animi aspernatur aut distinctio ea esse fuga itaque
+    minima natus nemo porro repellat voluptate. Ab dolor est nobis nostrum perferendis voluptatum.</p>
+<p>Alias aliquam aperiam consequatur cumque delectus dicta distinctio dolor facere maiores nobis numquam quibusdam rem,
+    sequi soluta ut. Earum explicabo molestiae nam nisi odio perspiciatis praesentium. Amet blanditiis non porro.</p>
+<p>Exercitationem, facilis non. Adipisci, aperiam deserunt expedita facilis fugiat inventore laborum laudantium maxime,
+    modi provident quam quod, similique temporibus. Assumenda delectus dicta eaque, earum id quisquam sapiente. Quos
+    vitae, voluptate.</p>
+<p>A dolores et laboriosam qui. Asperiores assumenda cupiditate doloremque illum inventore iure laborum magnam, nobis
+    non, nulla numquam odio possimus quisquam reprehenderit repudiandae saepe suscipit tempora temporibus velit vero!
+    Amet?</p>
+<p>Beatae debitis deserunt, dicta ex facilis illo itaque magni neque nulla obcaecati officia optio perferendis possimus
+    reiciendis totam. Culpa esse facilis nemo nisi soluta! Beatae impedit laudantium repudiandae saepe voluptas.</p>
+<p>Ducimus expedita quisquam quod. Ad animi, culpa eveniet facilis illo molestias non nostrum quam. Dignissimos facilis
+    quam totam! Architecto dicta earum eos iure quaerat. Aliquid et illo maiores rem sunt!</p>
+<p>Ad aperiam blanditiis commodi cumque dolore doloremque dolores est excepturi in ipsum labore magni maiores, maxime
+    natus necessitatibus non nulla officiis quia, sit sunt totam unde voluptatem. Magnam minus, quasi?</p>
+<p>Adipisci beatae debitis deserunt dicta ipsum minus molestias natus nostrum nulla placeat. Explicabo nulla placeat
+    rerum unde? Architecto asperiores atque beatae corporis cupiditate eligendi, inventore ipsa ipsum mollitia officiis.
+    Quod.</p>
+<p>Ab alias at culpa est illo perferendis placeat quae, quaerat? Amet aperiam delectus inventore nisi optio quo
+    voluptate voluptates voluptatum! Animi assumenda explicabo in maxime mollitia, nemo odio vel veniam.</p>
+<p>Aut beatae doloribus dolorum in ipsum laborum minima, nisi odit optio possimus quam quisquam tempore temporibus
+    tenetur ullam ut, voluptates. Consectetur dolor, facere optio perspiciatis quam sed veritatis voluptates.
+    Excepturi.</p>
+<p>Accusantium animi architecto beatae corporis cum cupiditate dolor ducimus ea eaque error in ipsam minus molestiae
+    nesciunt nobis omnis possimus provident quam quibusdam, reiciendis repellendus, sequi veritatis voluptates. Numquam,
+    quidem!</p>
+<p>Culpa, cumque dignissimos doloremque ducimus ea earum facere, facilis harum laboriosam laborum magnam, maiores
+    molestiae nam nemo nisi nulla numquam officiis possimus quae rem saepe sed suscipit tenetur unde vero.</p>
+<p>A ab alias asperiores at commodi consequatur dolorem eos excepturi inventore ipsum laborum libero nam nisi nobis
+    nostrum nulla possimus quae qui quo, sapiente sequi sunt suscipit tempora, ut, vitae.</p>
+<p>Ab debitis eius facilis harum laudantium quaerat. Accusantium adipisci alias beatae deserunt dolore dolorem est
+    facilis illo laudantium mollitia, natus nostrum odio perferendis, quas quos repellat sit, sunt unde voluptatum.</p>
+<p>Consequatur dicta, distinctio dolor doloribus ea earum exercitationem illo laboriosam libero minus, molestiae natus
+    nisi odio perferendis possimus quia sequi sint sunt suscipit veniam! Aliquid consectetur dolor quam qui ullam!</p>
+<p>Animi consequuntur cupiditate deleniti doloribus ex facere fuga hic illo incidunt iure labore, laboriosam libero
+    minima molestias nemo officiis praesentium provident quasi qui quos, reiciendis saepe sapiente, soluta tenetur
+    unde!</p>
+<p>Ab distinctio dolor facere in iste libero magnam non porro quod quos reiciendis rem saepe, voluptatibus! Blanditiis
+    consequatur consequuntur cum facilis, fugit harum iusto odit praesentium provident quia ut, vel!</p>
+<p>Alias aliquid animi consectetur corporis delectus dicta dolores, eveniet explicabo nisi, quae ratione, repellat?
+    Accusantium, aut corporis, dignissimos dolores eveniet harum illo laborum, molestiae non quae quam sed vitae
+    voluptas.</p>
+<p>Architecto aspernatur atque commodi earum et fugiat id impedit nam necessitatibus, neque numquam obcaecati porro quae
+    quas quibusdam quod reiciendis reprehenderit soluta. Adipisci commodi cumque eveniet impedit minus nihil quo.</p>
+
+<script>
+    window.addEventListener("DOMContentLoaded",function(e){
+        let parrafos=document.querySelectorAll("p");
+
+        for (let parrafo of parrafos){
+            parrafo.addEventListener("click",function (e){
+            parrafo.classList.toggle("seleccionado");
+            //con toggle no haria falta poner true o false, quita y pone el color
+            })
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form id="f1">
+    <input type="text" name="texto" id="texto" placeholder="Escribe una palabra">
+    <button>Cambiar</button>
+</form>
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, blanditiis corporis deleniti dignissimos dolore
+    doloremque fugiat impedit ipsa ipsum libero molestiae necessitatibus obcaecati qui quia quod soluta suscipit
+    tempore, vero.</p>
+
+<script>
+    window.addEventListener("DOMContentLoaded",function (e){
+        let f1 = document.getElementById("f1");//formulario
+        let texto = document.getElementById("texto");//boton
+        let p1 = document.getElementById("p1");//parrafo
+
+        f1.addEventListener("submit",function (e){ //submit nos sirve para poder dar intro tambien
+            e.preventDefault(); //sirve para que no vuelva, de esta manera se queda lo que escribamos
+            p1.textContent=texto.value;
+            texto.value="";//cuando escribimos el texto del placeholder queda vacio
+        })
+    });
+</script>
+</body>
+</html>
